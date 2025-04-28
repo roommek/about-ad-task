@@ -1,0 +1,15 @@
+{
+    "name": "about-ad-task",
+    "version": "1.0.0",
+    "description": "Landing page for product description",
+    "scripts": {
+      "build": "sass src/scss/style.scss public/style.css --no-source-map",
+      "dev": "sass --watch src/scss/style.scss public/style.css"
+    },
+    "dependencies": {
+      "bootstrap": "^5.3.5"
+    },
+    "devDependencies": {
+      "sass": "^1.87.0"
+    }
+  }
