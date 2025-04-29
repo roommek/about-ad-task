@@ -1,1 +1,48 @@
 @use 'custom' as *;
+
+@use 'sections/_banner1';
+
+@media (min-width: 0px) {
+    .product_description {
+        width: 90%;
+        font-size: .45em;
+    }
+}
+
+@media (min-width: 420px) {
+    .product_description {
+        width: 400px;
+    }
+}
+
+@media (min-width: 510px) {
+    .product_description {
+        width: 500px;
+    }
+}
+
+@media (min-width: 645px) {
+    .product_description {
+        width: 640px;
+    }
+}
+
+@media (min-width: 767px) {
+    .product_description {
+        width: 750px;
+        font-size: .5em;
+    }
+}
+
+@media (min-width: 990px) {
+    .product_description {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1370px) {
+    .product_description {
+        width: 1350px;
+        font-size: .6em;
+    }
+}
