@@ -1,6 +1,8 @@
 $font-family-base: 'Roboto', sans-serif;
 
 $primary: #0F7F25;
+$secondary: #F38122;
+$secondary-light: #FFF4EB;
 
 $spacer: 1rem;
 $spacers: (
@@ -10,7 +12,41 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 3.5,
+  8: $spacer * 5,
   10: $spacer * 10
+);
+
+$container-max-widths: (
+    ss: 400px,
+    sm: 540px,
+    ms: 640px,
+    md: 750px,
+    lg: 960px,
+    xl: 1150px,
+    xxl: 1350px
+  );
+  
+  $grid-breakpoints: (
+    xs: 0,
+    ss: 420px,
+    sm: 576px,
+    ms: 645px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+  );
+
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "secondary-light": $secondary-light
+  )
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
