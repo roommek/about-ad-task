@@ -41,12 +41,10 @@
                 transform: translateX(-50%);
             }
             
-
             h3 {
                 font-size: clamp(2em, 2vw, 3em);
                 display: inline-block;
                 text-transform: uppercase;
-                color: $primary;
             }
             p {
                 font-size: 1.4em;
