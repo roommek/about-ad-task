@@ -1,21 +1,7 @@
 @use '../_custom' as *;
 
-@media (min-width: 990px) { /* Dla ekranów MD i większych */
-    #banner2 {
-        .col-lg:last-child {
-            margin-left: -100%; /* Dostosuj wartość procentową nachodzenia */
-        }
-    }
-}
-
 .discount-container {
-    @media (min-width: 990px) {
-        justify-content: start !important;
-        padding-left: 7.5em !important;
-        margin-top: 7.5em !important;
-    }
-    color: $primary;
-    position: relative;
+  color: $primary;
   
   .up-to {
     font-size: clamp(5em, 4vw, 7em);
@@ -30,13 +16,9 @@
   
   .percent-sign {
     font-size: clamp(.5em, 4vw, .7em);
-    vertical-align: bottom; 
   }
   
   .aloe-vera-text {
-    @media (min-width: 990px) {
-        width: 35%;
-    }
     font-size: clamp(2em, 4vw, 3em); 
     line-height: 1.2;
     margin-top: 0.5em; 
@@ -54,10 +36,4 @@
     left: 0; 
     top: 0; 
     margin-top: 9.5em !important;
-}
-
-@media (min-width: 990px){
-    .percentage_col {
-        width: 80%;
-    }
 }

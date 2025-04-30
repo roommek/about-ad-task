@@ -1,27 +1,5 @@
 @use '../_custom' as *;
 
-@media (min-width: 992px) { /* Dla ekranów MD i większych */
-    #banner1 {
-        .col-lg:last-child {
-            margin-left: -100%; /* Dostosuj wartość procentową nachodzenia */
-        }
-    
-        .product-img {
-            left: 10%; /* Dostosuj położenie produktu, aby pasowało do nachodzenia */
-            transform: translateY(50%); /* Przesuwa produkt do góry */
-            bottom: auto; /* Resetuje domyślne położenie bottom */
-        }
-
-        .banner_text {
-            padding-right: 65% !important;
-            padding-left: 7.5em !important;
-            align-self: flex-start;
-        }
-
-
-    }
-}
-
 #banner1 {
     .product_img {
         left: 10%;
@@ -33,25 +11,5 @@
         left: 11%;
         top: 81%;
         width: 40%;
-    }
-
-    .banner_text {
-        margin-top: 7.5em !important;
-        margin: 0 0 3em;
-    }
-
-    h2 {
-        font-size: clamp(5em, 4vw, 6em);
-
-        @media (min-width: 1400px) {
-            font-size: 7.5em;
-          }
-    }
-    p {
-        font-size: clamp(2.3em, 1vw, 2.5em);
-
-        @media (min-width: 1400px) {
-            font-size: 2.5em;
-          }
     }
 }

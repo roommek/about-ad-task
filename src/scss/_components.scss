@@ -1,0 +1,39 @@
+@use '_custom' as *;
+
+@media (min-width: 990px) { 
+    .banner_image {
+        margin-left: -100%; 
+    }
+}
+
+h1 {
+    font-size: clamp(5em, 4vw, 6em);
+
+    @media (min-width: 1400px) {
+        font-size: 7.5em;
+      }
+}
+
+p {
+    font-size: clamp(2.3em, 1vw, 2.5em);
+
+    @media (min-width: 1400px) {
+        font-size: 2.1em;
+      }
+}
+
+section {
+    margin-top: 3rem;
+    @media (min-width: 646px) {
+        margin-top: 6.5rem;
+    }
+}
+
+.banner_text {
+    margin: 0 0 2em;
+    @media (min-width: 990px) {
+        padding-left: 7.5em !important;
+        margin-top: 7.5em !important;
+        padding-right: 60% !important;
+    }
+}
