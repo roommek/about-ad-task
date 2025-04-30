@@ -16,7 +16,6 @@
 
             p {
                 margin: 0;
-                font-size: 2.2em;
                 font-weight: 800;
                 color: $primary;
             }
@@ -41,14 +40,6 @@
                 transform: translateX(-50%);
             }
             
-            h3 {
-                font-size: clamp(2em, 2vw, 3em);
-                display: inline-block;
-                text-transform: uppercase;
-            }
-            p {
-                font-size: 1.4em;
-            }
         }
     }
 }
