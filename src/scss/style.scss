@@ -2,6 +2,7 @@
 
 @use 'sections/_banner1';
 @use 'sections/_description';
+@use 'sections/_info';
 
 @media (min-width: 0px) {
     .product_description {

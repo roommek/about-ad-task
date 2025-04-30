@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Landing Page</title>
+  
   <link rel="stylesheet" href="style.css" >
+  
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../src/js/info_popups.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();
+    });
+    </script>
+    
 </head>
 <body>
   <header>
@@ -59,14 +70,77 @@
                 ktore zapewniają maksymalną fotostabilność oraz czas ochrony przed promieniami UVA oraz UVB.
               </p>
           </div>
-          <div class="col-lg-6 order-lg-1 p-0 pe-3">
+          <div class="col-lg-6 order-lg-1 p-0 pe-lg-3">
               <img src="assets/images/woman_full_b.png" alt="" class="img-fluid rounded-4"/>
           </div>
         </div>
       </section>
 
-      <section id="info">
-        
+      <section id="info" class="position-relative">
+          <img src="assets/images/product_info_b.png" alt="" class="img-fluid rounded-4"/>
+          <div class="info_dots">
+
+            <div class="dot_div">
+              <button class="dot" data-target="popup-01" style="left: 80%; top: 45%">
+                <p>01</p>
+              </button>
+              <div id="popup-01" class="popup_info lg-left-50" style="left: 60%; top: 54%; display: none;">
+                  <h3>Testowany<br> fotodermatologicznie</h3>
+                  <p>Produkt został przetestowany pod kątem tolerancji alergicznej</p>
+              </div>
+            </div>
+
+            <div class="dot_div">
+              <button class="dot" data-target="popup-02" style="left: 49%; top: 10%">
+                <p>02</p>
+              </button>
+              <div id="popup-02" class="popup_info" style="left: 48%; top: 19%; display: none;">
+                  <h3>Tytuł 02</h3>
+                  <p>Opis elementu 02.</p>
+              </div>
+            </div>
+
+            <div class="dot_div">
+              <button class="dot" data-target="popup-03" style="left: 8%; top: 10%">
+                <p>03</p>
+              </button>
+              <div id="popup-03" class="popup_info" style="left: 5%; top: 19%; display: none;">
+                  <h3>Tytuł 03</h3>
+                  <p>Opis elementu 03.</p>
+              </div>
+            </div>
+
+            <div class="dot_div">
+              <button class="dot" data-target="popup-04" style="left: 25%; top: 30%">
+                <p>04</p>
+              </button>
+              <div id="popup-04" class="popup_info" style="left: 20%; top: 39%; display: none;">
+                  <h3>Tytuł 04</h3>
+                  <p>Opis elementu 04.</p>
+              </div>
+            </div>
+
+            <div class="dot_div">
+              <button class="dot" data-target="popup-05" style="left: 9%; top: 57%">
+                <p>05</p>
+              </button>
+              <div id="popup-05" class="popup_info" style="left: 5%; top: 66%; display: none;">
+                  <h3>Tytuł 05</h3>
+                  <p>Opis elementu 05.</p>
+              </div>
+            </div>
+
+            <div class="dot_div">
+              <button class="dot" data-target="popup-06" style="left: 30%; top: 70%">
+                <p>06</p>
+              </button>
+              <div id="popup-06" class="popup_info" style="left: 25%; top: 51%; display: none;">
+                  <h3>Tytuł 06</h3>
+                  <p>Opis elementu 06.</p>
+              </div>
+            </div>
+            
+          </div>
       </section>
 
       <section id="banner2">
