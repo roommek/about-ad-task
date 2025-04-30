@@ -1,0 +1,9 @@
+@use '../_custom' as *;
+
+@media (min-width: 990px) { 
+    .safety_box {
+        border-bottom: 1px solid;
+        width: 20%;
+        padding: 0 !important;
+    }
+}
