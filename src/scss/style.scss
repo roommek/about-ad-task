@@ -12,20 +12,20 @@
 @use 'sections/_usage';
 
 @media (min-width: 0px) {
-    .product_description {
+    .product_description, #ingredients .container {
         width: 90%;
         font-size: .45em;
     }
 }
 
 @media (min-width: 767px) {
-    .product_description {
+    .product_description, #ingredients .container{
         font-size: .5em;
     }
 }
 
 @media (min-width: 1400px) {
-    .product_description {
+    .product_description, #ingredients .container {
         font-size: .6em;
     }
 }
