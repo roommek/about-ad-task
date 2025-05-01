@@ -1,9 +1,14 @@
 @use '../_custom' as *;
 
-@media (min-width: 990px) { 
-    .safety_box {
-        border-bottom: 1px solid;
-        width: 20%;
-        padding: 0 !important;
+@include media-breakpoint-up(lg) {
+    #safety {
+        .card {
+            border-bottom: 1px solid !important;
+            border-radius: 0;
+        }
+
+        .col {
+            width: 23%;
+        }
     }
 }
