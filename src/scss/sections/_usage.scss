@@ -1,0 +1,29 @@
+@use '../_custom' as *;
+
+
+#usage {
+    .icon {
+        width: 120px; 
+        height: 120px; 
+        transform: translateX(-50%);
+
+        > div {
+            width: 100px; 
+            height: 100px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: flex !important;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            width: 150px;
+            height: 150px;
+
+            > div {
+                width: 120px; 
+                height: 120px;
+            }
+        }
+    }
+}
