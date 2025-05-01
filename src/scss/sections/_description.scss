@@ -20,6 +20,14 @@
             margin: 0;
         }
     }
+
+    .prosun_icon {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        margin-left: 8%;
+        width: 25%;
+    }
 }
 
 @media (min-width: map-get($grid-breakpoints, lg)) {
