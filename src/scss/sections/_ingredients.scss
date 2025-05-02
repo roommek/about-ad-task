@@ -1,0 +1,15 @@
+@use '../_custom' as *;
+
+#ingredients .container {
+    p {
+        font-size: 12px;
+    }
+    @include media-breakpoint-up(md) {
+        max-width: 70%;
+        margin-bottom: 30% !important;
+
+        p { 
+            font-size: 2em;
+        }
+    }
+}
