@@ -3,7 +3,6 @@
 #info {
     .info_dots{
         button{
-            position: absolute;
             cursor: pointer;
             width: 6em;
             height: 6em;
@@ -21,7 +20,6 @@
             }
         }
         .popup_info {
-            position: absolute;
             opacity: 90%;
             border: 1px solid #FCFCFC;
             border-radius: 1.2em;
@@ -29,17 +27,7 @@
             background-color: white;
             z-index: 5;
 
-            padding: 1em 1em;
-            @media (min-width: 1200px) {
-                padding: 2.5em 2.2em;
-            }
-            @media (max-width: 990px) {
-                left: 50% !important;
-                bottom: 5% !important;
-                top: auto !important;
-                transform: translateX(-50%);
-            }
-            
+            padding: 2.2em 2em;
         }
     }
 }
