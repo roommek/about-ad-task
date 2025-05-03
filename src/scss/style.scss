@@ -11,6 +11,7 @@
 @use 'sections/_safety';
 @use 'sections/_usage';
 @use 'sections/_ingredients';
+@use 'sections/_nav';
 
 @media (min-width: 0px) {
     .product_description, #ingredients .container {

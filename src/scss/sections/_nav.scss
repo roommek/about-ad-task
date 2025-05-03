@@ -1,0 +1,42 @@
+@use '../_custom' as *;
+
+nav {
+
+    img {
+        @include media-breakpoint-up(md) {
+            width: 130px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 150px;
+        }
+    }
+    
+    .navbar-collapse {
+        @include media-breakpoint-up(lg) {
+            border-top: 0 !important;
+        }
+    }
+
+    .nav-link {
+        color: $primary;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }    
+
+    .nav-link:hover {
+        color: $secondary;
+    }
+
+    button {
+        width: 50px;
+
+        .menu-icon {
+            color: $primary;
+        }
+        .close-icon {
+            color: $secondary;
+        }
+    }
+    
+}
