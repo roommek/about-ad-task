@@ -13,16 +13,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="../src/js/info_popups.js"></script>
   <script src="../src/js/menu.js"></script>
+  <script src="../src/js/form.js"></script>
     
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg shadow">
-      <div class="container px-3 px-lg-8 py-lg-2">
+      <div class="container px-3 px-lg-6 py-lg-2">
         <a class="navbar-brand d-flex align-items-center" href="#pros">
           <img src="assets/images/logo_b.png" alt="Logo" width="100" height="" class="img-fluid">
         </a>
-        <button class="navbar-toggler border-0 d-lg-none d-flex justify-content-center align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0 shadow-none d-lg-none d-flex justify-content-center align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="menu-icon">
             <svg width="35" height="35" viewBox="0 0 24 24" fill="none">
               <path d="M5 17H19M5 12H19M5 7H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -35,8 +36,9 @@
             </svg>
           </span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end mt-2 mt-lg-0 border-top" id="navbarNavAltMarkup">
-          <div class="navbar-nav my-2">
+        <div class="collapse navbar-collapse justify-content-end mt-2 mt-lg-0 border-top border-secondary" id="navbarNavAltMarkup">
+          <div class="line"></div>
+          <div class="navbar-nav my-2 gap-lg-3">
             <a class="nav-link active" aria-current="page" href="#">Strona główna</a>
             <a class="nav-link" href="#">Produkty</a>
             <a class="nav-link" href="#">O nas</a>
@@ -71,9 +73,8 @@
 
       <section id="description" class="position-relative">
         <div class="description_header text-center ">
-          <div class="header_button">
-            <p class="">Zdrowa i naturalna opalenizna</p>
-          </div>
+          <button type="" class="basic_button" id="" disabled>Zdrowa i naturalna opalenizna</button>
+
           <h2 class="fw-light text-primary my-4">Ochrona wrażliwej skóry.</h2>
           <p class=" mx-lg-10 px-3 fw-light">
             Połączenie olejku kokosowego z olejem arganowym doskonale odżywia i nawilża skórę, 
@@ -83,9 +84,7 @@
         </div>
         <div class="row m-0">
           <div class="description_text col-lg-6 order-lg-2 p-0 text-center text-lg-start mt-5 px-lg-5">
-            <div class="header_button ">
-              <p class="">Wysoka ochrona</p>
-            </div>
+            <button type="" class="basic_button" id="" disabled>Wysoka ochrona</button>
             <h4 class="fw-normal text-primary my-4">Kompleks filtrów<br> PROSUN-UV.</h4>
             <p class="fw-light">
               Krem zawiera w sobie specjalne połączenie filtrów fizycznych i chemicznych, 
@@ -309,7 +308,122 @@
         </div>
       </section>
 
+      <section id="form">
+        <form class="">
+          
+          <div class="d-ss-flex align-items-center gap-3 mb-4">
+            <div class="line d-none d-ss-flex flex-fill"></div>
+            <h3 class="text-center">Formularz zgłoszeniowy</h3>
+            <div class="line flex-fill"></div>
+          </div>
+          
+          <div class="content d-flex flex-column gap-3 mb-4">
+            <div class="personal_data d-flex flex-row gap-3 flex-wrap">
+              
+              <div class="select_group position-relative flex-shrink-0">
+                <label for="title">
+                  <span class="label_text">Tytuł</span> <span class="required">*</span>
+                </label>
+                <select id="title" name="title" required style="cursor: pointer;">
+                  <option value="" disabled selected hidden class="placeholder">Wybierz</option>
+                  <option value="bez tytułu">bez tytułu</option>
+                  <option value="Pan">Pan</option>
+                  <option value="Pani">Pani</option>
+                  <option value="Dr.">Dr.</option>
+                  <option value="Prof.">Prof</option>
+                </select>
+              </div>
+              
+              <div class="input_group position-relative flex-fill">
+                <label for="name">
+                    <span class="label_text">Imię</span> <span class="required">*</span>
+                </label>
+                <input type="text" class="text_input" id="name" name="name" placeholder="Imię" required>
+              </div>
+              
+              <div class="input_group position-relative flex-fill">
+                <label for="surname">
+                  <span class="label_text">Nazwisko</span> <span class="required">*</span>
+                </label>
+                <input type="text" class="text_input" id="surname" name="surname" placeholder="Nazwisko" required>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="input_group position-relative flex-fill">
+                <label for="message">
+                  <span class="label_text">Wiadomość</span>
+                </label>
+                <textarea class="text_input overflow-hidden" id="message" placeholder="Wiadomość" style=" resize: none;"></textarea>
+              </div>
+            </div>     
+          </div>
+
+          <div class="agreements d-flex flex-column mb-4">
+            <label for="agree-1" class="checkbox_block d-flex align-items-center gap-4" style="cursor: pointer;">
+              <div class="switch position-relative flex-shrink-0" style="height: 18px; width: 28px;">
+                <input type="checkbox" class="checkbox_input d-none" id="agree-1">
+                <div class="slider"></div>
+              </div>
+              <div class="checkbox_content d-flex flex-column gap-2">
+                <div class="d-flex align-items-center gap-3">
+                  <h5 class="mb-0 fw-normal"><span class="text">Zgoda na przetwarzanie danych</span> <span class="required">*</span></h5>
+                  <div class="line flex-fill"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              </div>
+            </label>
+          </div>
+
+          <div class="line_container mb-4">
+              <div class="line" id="line"></div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+              <button type="submit" class="basic_button" id="submit-btn" disabled>Wyślij zgłoszenie</button>
+          </div>
+
+          <div id="modal" class="modal d-flex position-fixed justify-content-center align-items-center z-10">
+            <div class="modal_content d-flex flex-column position-relative gap-3 bg-white m-3 py-4 px-3 shadow" style="border-radius: 1.2em;">
+              
+              <div class="modal_header d-flex flex-row gap-3 gap-lg-5 justify-content-between align-items-center">
+                <h5 class="mb-0">Potwierdzenie wysłania formularza</h5>
+                <span class="modal_close">
+                  <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
+                    <line x1="17" y1="7" x2="7" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    <line x1="7" y1="7" x2="17" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </span>
+              </div>
+              
+              <div class="modal_values d-flex flex-column gap-1 gap-ss-2">
+                <div class="key_value">
+                  <span class="key flex-shrink-0">Tytuł:</span>
+                  <span class="value" id="modal-title"></span>
+                </div>
+              
+                <div class="key_value">
+                  <span class="key flex-shrink-0">Imię:</span>
+                  <span class="value" id="modal-name"></span>
+                </div>
+              
+                <div class="key_value">
+                  <span class="key">Nazwisko:</span>
+                  <span class="value" id="modal-username"></span>
+                </div>
+
+                <div class="key_value">
+                  <span class="key">Wiadomość:</span>
+                  <span class="value " id="modal-message"></span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
     </div>
+
     <section id="ingredients" class="overflow-hidden position-relative d-flex justify-content-center w-100">
       <div class="container text-center mx-auto mb-5">
         <h2 class="mb-4 mb-xxl-6">Skład produktu</h2>

@@ -1,0 +1,193 @@
+@use '../_custom' as *;
+
+#form {
+    span.required {
+        color: red;
+    }
+
+    .line {
+        height: 2px;
+        background-color: $secondary;
+    }
+
+    /* Personal data */
+    .content {
+        .select_group {
+            width: 120px !important;
+        }
+    
+        label {
+            position: absolute;
+            top: -5px;
+            left: 10px;
+            font-weight: 400;
+            font-size: 1.3em;
+            color: #B8B8B8;
+            background-color: #FFFFFF;
+            padding: 0 5px;
+        }
+    
+        .text_input, select {
+            padding: .8em .9em;
+            border: 1px solid #B8B8B8;
+            border-radius: .6em;
+            width: 100%;
+            font-size: 1.8em;
+        }
+    
+        .text_input:focus, select:focus {
+            outline-color: $secondary;
+        }
+    
+        .text_input::placeholder, select:invalid {
+            color: #B8B8B8;
+        }
+    
+        select option {
+            font-size: 14px;
+            color: #000000;
+        }
+    }
+
+
+    /* Agreements */
+    .agreements {
+        .checkbox_content {
+            h5 {
+                color: #8B8B8B;
+                font-size: clamp(2.1em, 2vw, 2.5em);
+            }
+            
+            p {
+                font-size: clamp(1.5em, 2vw, 1.8em);
+            }
+        }
+
+        .line {
+            height: 1px;
+            background-color: #E0E0E0
+        }
+    
+        .slider {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border: 1px solid #B8B8B8;
+            border-radius: 9px;
+            background-color: #FFFFFF;
+            cursor: pointer;
+            transition: .5s;
+        }
+        
+        .slider:before {
+            content: "";
+            position: absolute;
+            top: 50%;         
+            left: 2px;
+            transform: translateY(-50%); 
+            left: 2px;
+            height: 14px;
+            width: 14px;
+            border-radius: 50%;
+            background-color: #B8B8B8;
+            transition: .5s;
+        }
+        
+        .checkbox_block:has(input:checked) {
+            .slider {
+                border-color: $secondary;
+            }
+
+            .slider:before {
+                background-color: $secondary;
+                transform: translateX(8px)  translateY(-50%);
+            }
+
+            h5 {
+                color: $primary;
+            }
+
+            .line {
+                background-color: $secondary;
+            }
+        } 
+         
+    }
+
+
+    /* Button */
+
+    .basic_button {
+        transition: background-color .3s ease;
+    }
+
+    .basic_button:not(:disabled) {
+        background-color: $secondary; 
+        color: white;
+        cursor: pointer;
+    }
+
+    .basic_button:not(:disabled):hover {
+        background-color: $primary;
+    }
+
+    /* Modal */
+    .modal {
+        background-color: rgba(255, 244, 235, 0.9); 
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s ease, visibility .3s ease;
+
+        .modal_content {
+            @include media-breakpoint-up(ss) {
+                max-width: 80%;
+            }
+            @include media-breakpoint-up(md) {
+                max-width: 45%;
+            }
+        }
+
+        h5 {
+            font-size: clamp(2.1em, 2vw, 2.5em);
+        }
+
+        .key_value {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            gap: 1em;
+            font-size: 1.8em;
+
+            @include media-breakpoint-up(ss) {
+                gap: 4em; 
+            }
+
+            .key {
+                width: 6em;
+                font-weight: 600;
+            }
+
+            .value {
+                flex: 1;
+                word-break: break-word;
+                font-weight: 400;
+            }
+        }
+
+        .modal_close {
+            cursor: pointer;
+        }
+    
+        .modal_close:hover {
+            color: $secondary
+        }
+    }
+
+    .modal.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}

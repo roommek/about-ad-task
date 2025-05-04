@@ -22,6 +22,9 @@ nav {
         color: $primary;
         padding-top: 0.3em;
         padding-bottom: 0.3em;
+        font-size: clamp(.8em, 3vw, 1em);
+        font-weight: 500;
+        text-transform: uppercase;
     }    
 
     .nav-link:hover {
@@ -31,12 +34,16 @@ nav {
     button {
         width: 50px;
 
-        .menu-icon {
+        .menu-icon, .close-icon {
             color: $primary;
         }
-        .close-icon {
+        .close-icon:hover {
             color: $secondary;
         }
     }
-    
+
+    .line {
+        height: 1px;
+        background-color: $secondary;
+    }
 }
