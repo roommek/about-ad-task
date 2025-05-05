@@ -4,22 +4,22 @@
   color: $primary;
   
   .up-to {
-    font-size: clamp(5em, 4vw, 7em);
+    font-size: clamp(5em, 4vw, 6.5em);
     line-height: 1;
   }
   
   .percentage {
-    font-size: clamp(10em, 15vw, 25em);
+    font-size: clamp(10em, 15vw, 20em);
     font-weight: 300;
     line-height: .9;
   }
   
   .percent-sign {
-    font-size: clamp(.5em, 4vw, .7em);
+    font-size: clamp(.5em, 4vw, .65em);
   }
   
   .aloe-vera-text {
-    font-size: clamp(2em, 4vw, 3em); 
+    font-size: clamp(2em, 4vw, 2.8em); 
     line-height: 1.2;
     margin-top: 0.5em; 
     font-weight: 500;
