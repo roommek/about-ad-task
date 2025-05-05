@@ -12,4 +12,10 @@
         top: 81%;
         width: 40%;
     }
+
+    @include media-breakpoint-up(xxl) {
+        p {
+            font-size: 2.5em;
+        }
+    }
 }

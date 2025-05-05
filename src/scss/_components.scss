@@ -1,6 +1,6 @@
 @use '_custom' as *;
 
-@media (min-width: 990px) { 
+@include media-breakpoint-up(lg) { 
     .banner_image {
         margin-left: -100%; 
     }
@@ -10,7 +10,7 @@ h1 {
     font-size: clamp(5em, 5vw, 6em);
     font-weight: 300;
 
-    @media (min-width: 1400px) {
+    @include media-breakpoint-up(xxl) {
         font-size: 7.5em;
       }
 }
@@ -42,17 +42,17 @@ p {
 
 section {
     margin-top: 3rem;
-    @media (min-width: 646px) {
+
+    @include media-breakpoint-up(md) {
         margin-top: 6.5rem;
     }
 }
 
 .banner_text {
-    margin: 0 0 2em;
-    @media (min-width: 990px) {
-        padding-left: 7.5em !important;
-        margin-top: 7.5em !important;
-        padding-right: 60% !important;
+    @include media-breakpoint-up(lg) {
+        padding-left: 8em !important;
+        margin-top: 10em !important;
+        padding-right: 65% !important;
     }
 }
 

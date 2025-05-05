@@ -1,8 +1,11 @@
 @use '../_custom' as *;
 
 #description {
+
     .description_header{
-        margin-top: 10em;
+        @include media-breakpoint-up(lg) {
+            width: 80%;
+        }
     }
 
     .prosun_icon {
@@ -15,19 +18,12 @@
 }
 
 @media (min-width: map-get($grid-breakpoints, lg)) {
-    .description_header {
-        margin-top: 8rem !important;
-    }
     .description_text {
         width: 45%;
     }
 }
 
 @media (min-width: map-get($grid-breakpoints, xxl)) {
-    .description_header {
-        margin-top: 10rem !important;
-    }
-
     .description_text {
         width: 37%;
     }

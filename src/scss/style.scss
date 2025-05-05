@@ -16,21 +16,21 @@
 @use 'sections/_footer';
 
 @media (min-width: 0px) {
-    .product_description, #ingredients .container {
+    .product_description {
         width: 90%;
         font-size: .45em;
     }
 }
 
-@media (min-width: 767px) {
-    .product_description, #ingredients .container{
+@include media-breakpoint-up(md) {
+    .product_description {
         font-size: .5em;
     }
 }
 
-@media (min-width: 1400px) {
-    .product_description, #ingredients .container {
-        font-size: .6em;
+@include media-breakpoint-up(xxl) {
+    .product_description {
+        font-size: .55em;
     }
 }
 
