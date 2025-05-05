@@ -1,2 +1,10 @@
 @use '../_custom' as *;
 
+#banner3 {
+    .arrow-icon {
+        width: 75px;
+        @include media-breakpoint-up(xxl) {
+            width: 90px;
+        }
+    }
+}
