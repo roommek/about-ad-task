@@ -1,4 +1,4 @@
-$(document).ready(function() {
+export function setupInfoPopups() {
     const $dots = $('.dot');
     const $popups = $('.popup_info');
 
@@ -18,5 +18,5 @@ $(document).ready(function() {
     });
 
     $popups.hide();
-});
+};
 

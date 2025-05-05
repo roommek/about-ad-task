@@ -8,12 +8,9 @@
   <link rel="stylesheet" href="style.css" >
   
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="../src/js/info_popups.js"></script>
-  <script src="../src/js/menu.js"></script>
-  <script src="../src/js/form.js"></script>
+  <script type="module" src="../src/js/main.js"></script>
     
 </head>
 <body>
@@ -308,8 +305,22 @@
         </div>
       </section>
 
+      <section id="ingredients">
+        <div class="ingredients_content text-center mx-auto">
+          <h2 class="mb-4 mb-xxl-6">Skład produktu</h2>
+          <p class="fs-10">
+            Aqua (Water), Aloe Barbadensis Leaf Juice, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Butyl Methoxydibenzoylmethane (Avobenzone), 
+            Shea Butter Ethyl Esters, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Arginine, Ethylhexyl Triazone, Glycerin, Polyglyceryl-3 Cocoate, 
+            Polyester-7, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine (Bemotrizinol), Neopentyl Glycol Diheptanoate, Polyglyceryl-6 Stearate, 
+            Glyceryl Stearate Citrate, Phenoxyethanol, Potassium Cetyl Phosphate, Magnesium Aluminum Silicate, Diisopropyl Sebacate, 
+            Parfum (Fragrance), Cocos Nucifera Oil (Cocos Nucifera (Coconut) Oil), Argania Spinosa Kernel Oil, Tocopheryl Acetate, 
+            Ethylhexylglycerin, Polyglyceryl-6 Behenate, Citric Acid.
+          </p>
+        </div>
+      </section>
+
       <section id="form">
-        <form class="">
+        <form>
           
           <div class="d-ss-flex align-items-center gap-3 mb-4">
             <div class="line d-none d-ss-flex flex-fill"></div>
@@ -348,7 +359,7 @@
                 <input type="text" class="text_input" id="surname" name="surname" placeholder="Nazwisko" required>
               </div>
             </div>
-
+  
             <div class="message">
               <div class="input_group position-relative flex-fill">
                 <label for="message">
@@ -358,7 +369,7 @@
               </div>
             </div>     
           </div>
-
+  
           <div class="agreements d-flex flex-column mb-4">
             <label for="agree-1" class="checkbox_block d-flex align-items-center gap-4" style="cursor: pointer;">
               <div class="switch position-relative flex-shrink-0" style="height: 18px; width: 28px;">
@@ -374,15 +385,15 @@
               </div>
             </label>
           </div>
-
+  
           <div class="line_container mb-4">
               <div class="line" id="line"></div>
           </div>
-
+  
           <div class="d-flex justify-content-center">
               <button type="submit" class="basic_button" id="submit-btn" disabled>Wyślij zgłoszenie</button>
           </div>
-
+  
           <div id="modal" class="modal d-flex position-fixed justify-content-center align-items-center z-10">
             <div class="modal_content d-flex flex-column position-relative gap-3 bg-white m-3 py-4 px-3 shadow" style="border-radius: 1.2em;">
               
@@ -411,37 +422,28 @@
                   <span class="key">Nazwisko:</span>
                   <span class="value" id="modal-username"></span>
                 </div>
-
+  
                 <div class="key_value">
                   <span class="key">Wiadomość:</span>
                   <span class="value " id="modal-message"></span>
                 </div>
-
+  
               </div>
             </div>
           </div>
         </form>
       </section>
+
     </div>
 
-    <section id="ingredients" class="overflow-hidden position-relative d-flex justify-content-center w-100">
-      <div class="container text-center mx-auto mb-5">
-        <h2 class="mb-4 mb-xxl-6">Skład produktu</h2>
-        <p class="fs-10">
-          Aqua (Water), Aloe Barbadensis Leaf Juice, Octocrylene, Phenylbenzimidazole Sulfonic Acid, Butyl Methoxydibenzoylmethane (Avobenzone), 
-          Shea Butter Ethyl Esters, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Arginine, Ethylhexyl Triazone, Glycerin, Polyglyceryl-3 Cocoate, 
-          Polyester-7, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine (Bemotrizinol), Neopentyl Glycol Diheptanoate, Polyglyceryl-6 Stearate, 
-          Glyceryl Stearate Citrate, Phenoxyethanol, Potassium Cetyl Phosphate, Magnesium Aluminum Silicate, Diisopropyl Sebacate, 
-          Parfum (Fragrance), Cocos Nucifera Oil (Cocos Nucifera (Coconut) Oil), Argania Spinosa Kernel Oil, Tocopheryl Acetate, 
-          Ethylhexylglycerin, Polyglyceryl-6 Behenate, Citric Acid.
-        </p>
-      </div>
+    <footer id="footer" class="position-relative mt-6">
       <div class="position-absolute bottom-0 d-none d-md-flex">
         <img src="assets/images/logo_b.png" alt="" class="img-fluid z-5 position-absolute" style="width: 13%; left:37%; bottom: 16%">
         <img src="assets/images/aloe_small_b.png" alt="" class="img-fluid">
       </div>
       <img src="assets/images/hand_b.png" alt="" class="img-fluid position-absolute end-0 bottom-0 d-none d-md-flex" style="width:35%;">
-    </section>
+    </footer>
+
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

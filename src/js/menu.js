@@ -1,4 +1,4 @@
-$(document).ready(function () {
+export function setupMenuToggle() {
   $('#navbarNavAltMarkup').on('show.bs.collapse', function () {
     $('.menu-icon').addClass('d-none');
     $('.close-icon').removeClass('d-none');
@@ -8,4 +8,4 @@ $(document).ready(function () {
     $('.menu-icon').removeClass('d-none');
     $('.close-icon').addClass('d-none');
   });
-});
+};

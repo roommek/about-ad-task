@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+export function setupForm() {
     const form = document.getElementById("form");
     const button = document.getElementById("submit-btn");
 
@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const title = document.getElementById("title").value;
         const name = document.getElementById("name");
         const surname = document.getElementById("surname");
+
         name.value = cleanInput(name.value);
         surname.value = cleanInput(surname.value);
+
         const isValidName = isValidText(name.value);
         const isValidSurname = isValidText(surname.value);
         const agree = document.getElementById("agree-1").checked;
@@ -66,4 +68,4 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.classList.remove("show");
         }
     });
-});
+};

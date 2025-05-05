@@ -1,0 +1,7 @@
+@use '../_custom' as *;
+
+#footer {
+    @include media-breakpoint-up(md) {
+        margin-top: 30% !important;
+    }
+}
